@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="js/play-on-click.js"></script>
+    <script src="js/hide-on-play.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <!--
+        SOURCE
+        Author: Bitmovin
+        URL:    https://bitmovin.com/demos/vr-360
+        -->
+        <video id="video" preload="auto"
+               src="https://cdn.aframe.io/videos/bunny.mp4"
+               loop="true"
+               crossOrigin="anonymous"></video>
+      </a-assets>
+      <a-videosphere
+        rotation="0 -90 0"
+        src="#video"
+        visible="false"
+        play-on-click>
+      </a-videosphere>
+      <a-camera>
+        <a-entity
+          position="0 0 -1.5"
+          text="align: center;
+                width: 6;
+                wrapCount: 100;
+                color: black;
+                value: Click or tap to start video OOO"
+          hide-on-play="#video">
+        </a-entity>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
