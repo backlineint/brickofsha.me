@@ -7,15 +7,10 @@
   <body>
     <a-scene>
       <a-assets>
-        <!--
-        SOURCE
-        Author: Bitmovin
-        URL:    https://bitmovin.com/demos/vr-360
-        -->
         <video id="video" preload="auto"
-               src="https://cdn.aframe.io/videos/bunny.mp4"
-               loop="true"
-               crossOrigin="anonymous"></video>
+          src="https://storage.googleapis.com/brick-of-shame/brick_vr.mp4"
+          loop="true"
+          crossOrigin="anonymous"></video>
       </a-assets>
       <a-videosphere
         rotation="0 -90 0"
@@ -30,7 +25,7 @@
                 width: 6;
                 wrapCount: 100;
                 color: black;
-                value: Click or tap to start video OOO"
+                value: Click or tap to accept Brick of Shame"
           hide-on-play="#video">
         </a-entity>
       </a-camera>
