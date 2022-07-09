@@ -1,6 +1,19 @@
+html {
+  background: url("/images/brick_bkg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  overflow: auto;
+}
+
 body {
+  padding: 2rem 0;
+}
+
+main {
   max-width: var(--size-content-3);
-  margin: 1rem auto;
+  margin: 0 auto;
+  padding: 1rem;
+  border: var(--border-size-1) solid var(--gray-1);
+  background-color: var(--surface-1);
 }
 
 h2 {
@@ -10,7 +23,6 @@ h2 {
 
 iframe {
   margin: 1rem auto;
-  padding-bottom: 2rem;
 }
 
 p {
