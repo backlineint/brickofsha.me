@@ -1,34 +1,18 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <script src="js/play-on-click.js"></script>
-    <script src="js/hide-on-play.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/open-props"/>
+    <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Brick of Shame</title>
   </head>
   <body>
-    <a-scene>
-      <a-assets>
-        <video id="video" preload="auto"
-          src="https://storage.googleapis.com/brick-of-shame/brick_vr.mp4"
-          loop="true"
-          crossOrigin="anonymous"></video>
-      </a-assets>
-      <a-videosphere
-        rotation="0 -90 0"
-        src="#video"
-        visible="false"
-        play-on-click>
-      </a-videosphere>
-      <a-camera>
-        <a-entity
-          position="0 0 -1.5"
-          text="align: center;
-                width: 6;
-                wrapCount: 100;
-                color: black;
-                value: Click or tap to accept Brick of Shame"
-          hide-on-play="#video">
-        </a-entity>
-      </a-camera>
-    </a-scene>
+    <h1>brickofsha.me</h1>
+    <h2>Congratulations! You have accepted the Brick of Shame at a Drupal event coffee BOF.</h2>
+    <p class="lead">Accept your freeze dried prize using the
+    <a href="/handoff/index.html">interactive Brick of Shame handoff experience</a>*</p>
+    <p>* The interactive brick of shame handoff is best experienced in virtual reality and has been tested extensively using the Meta Quest 2**
+    <br />** I suppose you could also use it with one of those regular computers (if you must). Click and drag to simulate head tracking.</p>
+    <h4>Confused? Good (but this video might help.)</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4GmRszIPVPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </body>
 </html>

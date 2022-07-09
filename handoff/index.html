@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="../js/play-on-click.js"></script>
+    <script src="../js/hide-on-play.js"></script>
+    <title>Brick of Shame Interactive Handoff Experience</title>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <video id="video" preload="auto"
+          src="https://storage.googleapis.com/brick-of-shame/brick_vr.mp4"
+          loop="true"
+          crossOrigin="anonymous"></video>
+      </a-assets>
+      <a-videosphere
+        rotation="0 -90 0"
+        src="#video"
+        visible="false"
+        play-on-click>
+      </a-videosphere>
+      <a-camera>
+        <a-entity
+          position="0 0 -1.5"
+          text="align: center;
+                width: 6;
+                wrapCount: 100;
+                color: black;
+                value: Click or tap to accept Brick of Shame"
+          hide-on-play="#video">
+        </a-entity>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>

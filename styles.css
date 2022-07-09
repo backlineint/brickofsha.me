@@ -1,0 +1,22 @@
+body {
+  max-width: var(--size-content-3);
+  margin: 1rem auto;
+}
+
+h2 {
+  margin: 1rem 0;
+  font-size: var(--font-size-5);
+}
+
+iframe {
+  margin: 1rem auto;
+  padding-bottom: 2rem;
+}
+
+p {
+  margin: 2rem 0;
+}
+
+p.lead {
+  font-size: var(--font-size-4);
+}
