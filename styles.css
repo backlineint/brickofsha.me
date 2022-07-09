@@ -12,7 +12,7 @@ main {
   max-width: var(--size-content-3);
   margin: 0 auto;
   padding: 1rem;
-  border: var(--border-size-1) solid var(--gray-1);
+  box-shadow: var(--shadow-6);
   background-color: var(--surface-1);
 }
 
